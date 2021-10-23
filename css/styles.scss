@@ -1,0 +1,456 @@
+$primaryColor: #845E9F;
+$secondaryColor: #397EA3;
+$thirdColor: #FFF6FF;
+$forthColor: #954f9b;
+$pointColor: #F9F871;
+$pointColor2: #fc95dd;
+$titleColor: #5B3F6F;
+$white: white;
+$logoFont: fantasy;
+$titleFont: cursive;
+$descFont: 'Trebuchet MS';
+
+
+
+// Mobile
+* {
+    padding: 0;
+}
+
+header {
+
+    text-align: center;
+    font-family: $logoFont;
+
+    .headerDiv {
+        background-color: $primaryColor;
+
+        img {
+            max-width: 8%;
+            max-height: 100%;
+            height: 60px;
+            padding-top: 10px;
+        }
+
+        h1 {
+            margin: 0 auto;
+            color: $white;
+            padding-bottom: 1px;
+        }
+
+    }
+
+    .menuNav {
+
+        ul {
+
+            li {
+                text-align: center;
+                width: 90%;
+                margin: 0 auto;
+                padding: 0 auto;
+                border-radius: 4em;
+                background-color: $secondaryColor;
+                list-style-type: none;
+                color: white;
+                font-family: $descFont;
+                font-weight: bolder;
+                font-style: oblique;
+                cursor: pointer;
+                font-size: 14pt;
+
+                p {
+                    padding: 5px;
+                    margin: 5px;
+                }
+            }
+
+            li:hover {
+                color: $thirdColor;
+            }
+        }
+    }
+}
+
+main {
+    background-color: $thirdColor;
+    padding-top: 1px;
+    padding-bottom: 10px;
+
+    h2 {
+        color: $titleColor;
+        text-align: center;
+        font-family: $titleFont;
+        font-variant: small-caps;
+        text-shadow: 1px 1px 4px rgb(140, 102, 175);
+    }
+
+    .imgDiv {
+        padding-top: 10px;
+        border: $thirdColor solid 2px;
+        position: relative;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+
+        }
+
+        #menImg {
+            display: none;
+        }
+
+        #womenImg {
+            display: none;
+        }
+
+        #arrow {
+            position: absolute;
+            width: 30%;
+            height: 30%;
+            top: 28%;
+            left: 67%;
+            transform: rotate(-25deg);
+            display: none;
+        }
+
+        .exploreBtn {
+            position: absolute;
+            top: 43.5%;
+            left: 39%;
+            width: 25%;
+            height: 25%;
+            border-radius: 50%;
+            background: $pointColor;
+            opacity: 70%;
+            font-family: $logoFont;
+            font-size: 14pt;
+            cursor: pointer;
+            display: none;
+        }
+
+        .exploreBtn2 {
+            position: absolute;
+            top: 43.5%;
+            left: 39%;
+            width: 25%;
+            height: 25%;
+            border-radius: 50%;
+            background: $pointColor2;
+            opacity: 70%;
+            font-family: $logoFont;
+            font-size: 14pt;
+            cursor: pointer;
+            display: none;
+        }
+
+
+        .exploreBtn:hover {
+            opacity: 100%;
+            color: rgb(49, 49, 185);
+        }
+
+        .exploreBtn2:hover {
+            opacity: 100%;
+            color: rgb(122, 4, 201);
+        }
+    }
+
+    .itemDiv {
+        h4 {
+            font-family: $titleFont;
+            text-align: center;
+            color: $forthColor;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-family: $descFont;
+            padding: 10px 10px;
+            padding-bottom: 15px;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: $primaryColor;
+            outline: 5px dotted $primaryColor;
+        }
+    }
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+    .tshirtsContent {
+        position: absolute;
+        left: 14%;
+        top: 18%;
+        color: $white;
+        padding: 10px;
+        border: 5px $pointColor dotted;
+        cursor: pointer;
+    }
+
+    .tshirtsContent:hover {
+        background-color: $pointColor;
+        color: $secondaryColor;
+    }
+
+    .suitsContent {
+        position: absolute;
+        left: 66%;
+        top: 18%;
+        color: $white;
+        padding: 10px;
+        border: 5px $pointColor dotted;
+        cursor: pointer;
+    }
+
+    .suitsContent:hover {
+        background-color: $pointColor;
+        color: $secondaryColor;
+    }
+
+    .shoesContent {
+        position: absolute;
+        left: 14%;
+        top: 68%;
+        color: $white;
+        padding: 10px;
+        border: 5px $pointColor dotted;
+        cursor: pointer;
+    }
+
+    .shoesContent:hover {
+        background-color: $pointColor;
+        color: $secondaryColor;
+    }
+
+    .accsContent {
+        position: absolute;
+        left: 66%;
+        top: 68%;
+        color: $white;
+        padding: 10px;
+        border: 5px $pointColor dotted;
+        cursor: pointer;
+    }
+
+    .accsContent:hover {
+        background-color: $pointColor;
+        color: $secondaryColor;
+    }
+
+    img {
+        max-width: 50%;
+        max-height: 50%;
+    }
+}
+
+.womenContent {
+    .womenTitle {
+        text-align: center;
+        font-family: fantasy;
+    }
+
+    img {
+        max-width: 100%;
+        text-align: center;
+        position: relative;
+    }
+
+    .womenBtn {
+        position: absolute;
+        top: 48%;
+        left: 41%;
+        padding: 10px 30px;
+        font-size: 18px;
+        border-radius: 20px;
+        background: $pointColor;
+        opacity: 70%;
+        font-family: $logoFont;
+        cursor: pointer;
+    }
+
+    .shopImg {
+        position: absolute;
+        top: 34%;
+        left: 1%;
+        display: none;
+
+    }
+
+    p {
+        text-align: center;
+        font-family: $descFont;
+    }
+}
+
+
+footer {
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+
+    .fab {
+        color: $primaryColor;
+    }
+
+    p {
+        font-size: small;
+    }
+}
+
+// Desktop
+@media screen and (min-width:1000px) {
+
+    .headerDiv {
+        position: relative;
+        height: 120px;
+        padding-top: 1px;
+
+        img {
+            position: absolute;
+            top: 18%;
+            left: 20px;
+        }
+
+        h1 {
+            font-size: 40pt;
+            padding-top: 25px;
+        }
+    }
+
+    .menuNav {
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            li {
+                height: 40px;
+
+                p {
+                    font-size: 18pt;
+                    padding-bottom: 5px;
+                }
+            }
+        }
+    }
+
+    main {
+        position: relative;
+        height: 80vh;
+        padding: 0 auto;
+
+        div {
+            width: 150%;
+            padding-top: 3%;
+
+            h2 {
+                text-align: center;
+                font-size: 232%;
+            }
+        }
+
+        .imgDiv {
+            position: absolute;
+            max-width: 50%;
+            top: 30px;
+
+            img {
+                margin: auto;
+            }
+
+            .exploreBtn {
+                font-size: larger;
+            }
+        }
+
+        .itemDiv {
+            position: absolute;
+            width: 40%;
+            top: 16%;
+            left: 55%;
+
+            h4 {
+                font-size: 130%;
+            }
+
+            p {
+                text-align: center;
+                font-size: 18px;
+                padding: 8%;
+                margin-top: 10%;
+                line-height: 200%;
+            }
+        }
+    }
+
+    .product {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        max-width: 100%;
+
+        img {
+            padding-left: 13px;
+            max-width: 24%;
+            max-height: 10%;
+            cursor: pointer;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        .tshirtsContent,
+        .suitsContent,
+        .accsContent,
+        .shoesContent {
+            display: none;
+        }
+    }
+
+    .womenContent {
+        max-width: 100%;
+        max-height: 100%;
+        padding-bottom: 20px;
+
+        .womenTitle {
+            font-size: 40px;
+        }
+
+        img {
+            position: relative;
+        }
+
+        .womenBtn {
+            position: absolute;
+            top: 94%;
+            left: 46%;
+            padding: 20px 60px;
+            font-size: 36px;
+            border-radius: 20px;
+            background: $pointColor;
+            opacity: 70%;
+            font-family: $logoFont;
+            cursor: pointer;
+
+        }
+
+        .shopImg {
+            position: absolute;
+            top: 38%;
+            left: 8%;
+            display: none;
+
+        }
+
+        p {
+            font-size: 28px;
+            text-align: center;
+        }
+    }
+}
